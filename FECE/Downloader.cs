@@ -1,4 +1,4 @@
-﻿namespace BlueFlameDownloader;
+﻿namespace FECE;
 
 public static class Downloader
 {

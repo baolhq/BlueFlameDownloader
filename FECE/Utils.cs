@@ -1,10 +1,10 @@
-﻿namespace BlueFlameDownloader;
+﻿namespace FECE;
 
 public class Utils
 {
-    private string[] Scopes = { DriveService.Scope.DriveReadonly };
+    private readonly string[] _scopes = { DriveService.Scope.DriveReadonly };
     public static readonly string DestFolder = Utils.GetDownloadFolderPath();
-    public UserCredential? Credential { get; set; }
+    private UserCredential? Credential { get; set; }
 
     /// <summary>
     /// Generate user credential by reading credentials.json if token.json does not exist
@@ -19,7 +19,7 @@ public class Utils
 
         var credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
             GoogleClientSecrets.FromStream(stream).Secrets,
-            Scopes,
+            _scopes,
             "user",
             CancellationToken.None,
             new FileDataStore(credPath, true)).Result;
@@ -53,7 +53,7 @@ public class Utils
     }
 
     public static string GetDownloadFolderPath() =>
-        Path.Join(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "BlueFlameDownloader");
+        Path.Join(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "FECE");
 
     private static void DeleteDirectory(string targetDir)
     {
@@ -80,9 +80,10 @@ public class Utils
         Credential = GenerateCredential();
     }
 
-    public static void Logout()
+    public void Logout()
     {
         if (Directory.Exists("./token.json")) DeleteDirectory("./token.json");
+        Credential = null;
     }
 
     public static void ClearAll()

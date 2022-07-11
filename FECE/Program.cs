@@ -1,8 +1,8 @@
-﻿namespace BlueFlameDownloader;
+﻿namespace FECE;
 
 public static class Program
 {
-    public const string ApplicationName = "Blue Flame Downloader";
+    public const string ApplicationName = "FECE";
     private static readonly string DestFolder = Utils.GetDownloadFolderPath();
 
     private const string EosClientCampusId = "1X-sZrocH4Mj2vOmc-jKdX8Z59H5TlrQC";
@@ -22,7 +22,7 @@ public static class Program
 
             while (!exit)
             {
-                AnsiConsole.Write(new Markup("[blue]Blue Flame Downloader[/]"));
+                AnsiConsole.Write(new Markup("[blue]FPT Exam Clients Enhanced[/]"));
                 Console.WriteLine();
                 Console.WriteLine();
 
@@ -57,7 +57,7 @@ public static class Program
                         utils.Login();
                         break;
                     case "Log Out":
-                        Utils.Logout();
+                        utils.Logout();
                         break;
                     case "Download EOS Client (On Campus)":
                         utils.Download(Path.Join(DestFolder, "EOSClient_OnCampus.zip"),
