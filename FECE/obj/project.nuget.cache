@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "PSAfVCHo7fRJtb/skE2viAL1GjoXuucM6QUVGU+ZX427kiAFD38MOykA90mW61CHsfcrJww3gFz4w8L4i3YBig==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\baolhq\\dev\\cs\\FECE\\FECE\\FECE.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\baolhq\\.nuget\\packages\\google.apis\\1.57.0\\google.apis.1.57.0.nupkg.sha512",
+    "C:\\Users\\baolhq\\.nuget\\packages\\google.apis.auth\\1.57.0\\google.apis.auth.1.57.0.nupkg.sha512",
+    "C:\\Users\\baolhq\\.nuget\\packages\\google.apis.core\\1.57.0\\google.apis.core.1.57.0.nupkg.sha512",
+    "C:\\Users\\baolhq\\.nuget\\packages\\google.apis.drive.v3\\1.57.0.2684\\google.apis.drive.v3.1.57.0.2684.nupkg.sha512",
+    "C:\\Users\\baolhq\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\baolhq\\.nuget\\packages\\sharpcompress\\0.32.1\\sharpcompress.0.32.1.nupkg.sha512",
+    "C:\\Users\\baolhq\\.nuget\\packages\\spectre.console\\0.44.0\\spectre.console.0.44.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\baolhq\\dev\\cs\\FECE\\FECE\\obj\\project.nuget.cache : Found invalid data while decoding."
+    }
+  ]
+}

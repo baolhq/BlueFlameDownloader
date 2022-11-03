@@ -5,7 +5,7 @@ public static class Program
     public const string ApplicationName = "FECE";
     private static readonly string DestFolder = Utils.GetDownloadFolderPath();
 
-    private const string EosClientCampusId = "1X-sZrocH4Mj2vOmc-jKdX8Z59H5TlrQC";
+    private const string EosClientCampusId = "1dQaZYcJaBVzsRo1uOqPPXTfI7qO-0Zox";
     private const string EosClientAtHomeId = "1x1fyGOrcP5Fx58foNo-CcWtnPf-uzuHM";
     private const string PeaClientId = "1rx0t_fSFqc1IJ4NSIQqjVjWmd3t5r1sC";
     private const string SebForWindowsId = "15Xpcj1rtXmgUtG0psqTWQkAtf7QUV3Rg";
